@@ -11,7 +11,7 @@ const PromptCardList = ({ data, handleTagClick }) => {
         <PromptCard 
           key={post._id}
           post={post}
-          handleTagClick={handleTagClick}
+          handleTagClick={() => {}}
         />
       ))}
     </div>
@@ -36,7 +36,7 @@ const Feed = () => {
     }
 
     fetchPosts()
-  })
+  }, [])
 
   return (
     <section className='feed'>

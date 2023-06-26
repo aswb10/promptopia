@@ -25,6 +25,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
             <div className='flex-1 justify-start items-center gap-3 cursor-pointer'>
                 <Image
                     src={post.creator.image}
+                    //src={'./public/assets/images/logo.svg'}
                     alt='user_image'
                     width={40}
                     height={40}
